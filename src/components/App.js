@@ -8,6 +8,7 @@ import TickingClock from "./TickingClock";
 import RulesList from "./RulesList";
 import QuotesList from "./QuotesList"
 import StatePlayground from "./StatePlayground";
+import PropsPlayground from "./PropsPlayground";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <QuotesList/>
       <RulesList />
       <ToDoList />
+      <PropsPlayground user={"Agnieszka"} place={"podwórko"} language={"React"}/>
+      <PropsPlayground user={"Marek"} place={"miejsce"} language={"Życie"}/>
       <Footer />
     </div>
   );

@@ -9,6 +9,7 @@ import toDosData from "./dataBases/ToDosData";
 //   newDiv.appendChild(newTask);
 //   document.getElementById("add").appendChild(newDiv);
 // }
+let count = 5;
 
 function ToDoList() {
   const [itemsArray, setItemsArray] = useState(toDosData);
@@ -18,13 +19,17 @@ function ToDoList() {
 
   const ref = useRef();
 
+
+  
+
   const addTask = () => {
     if (ref.current) {
       console.log("fghj");
       const newArray = [
         ...itemsArray,
-        { id: 10, text: ref.current.value, completed: true },
+        { id: count, text: ref.current.value, completed: NaN },
       ];
+      count++;
       setItemsArray(newArray);
     }
   };
@@ -41,7 +46,7 @@ function ToDoList() {
       <button onClick={addTask}>Dodaj Zadanie</button>
       <div className="todo-list" id="add">
         {itemsArray.map((item) => (
-          <p key={item.id}> {item.text} </p>
+          <h3 key={item.id}><input type="checkbox" ></input> {item.id}. {item.text}  </h3>
         ))}
       </div>
     </div>
