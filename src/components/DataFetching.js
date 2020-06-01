@@ -15,7 +15,7 @@ function DataFetching() {
         console.log(err);
       });
   }, []);
-  
+
   return (
     <div>
       <h3>

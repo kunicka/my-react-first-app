@@ -8,7 +8,7 @@ import HookCounterWithArray from "./HookCounterWithArray";
 import HookCounterUseEffect from "./HookCounterUseEffect";
 import HookUseEffectMousePosition from "./HookUseEffectMousePosition";
 import Timer from "./Timer";
-import DataFetchingContainer from './DataFetchingContainer';
+// import DataFetchingContainer from './DataFetchingContainer';
 
 function HooksExercises() {
     return (
@@ -21,7 +21,7 @@ function HooksExercises() {
            <HookCounterUseEffect/>
            <HookUseEffectMousePosition/>
            <Timer/>
-           <DataFetchingContainer/>
+           {/* <DataFetchingContainer/> */}
         </div>
     )
 }

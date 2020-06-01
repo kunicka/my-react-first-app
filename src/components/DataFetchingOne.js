@@ -15,7 +15,7 @@ function DataFetchingOne() {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [id]);
   return (
     <div>
       <h3> 
