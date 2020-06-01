@@ -1,30 +1,23 @@
-import React from "react";
-import PropsPlayground2 from "./PropsPlayground2";
-//import Counter from "./Counter";
-import HookCounter from "./HookCounter";
-import HookCounter2 from "./HookCounter2";
-import HookCounterWithObject from "./HookCounterWithObject";
-import HookCounterWithArray from "./HookCounterWithArray";
-import HookCounterUseEffect from "./HookCounterUseEffect";
-import HookUseEffectMousePosition from "./HookUseEffectMousePosition";
+import React, {useState} from "react";
 
-const PropsPlayground = (props) => (
+import HooksExercises from "./HooksExercises";
+
+function PropsPlayground (props) {
+    const [display, setDisplay] = useState(false);
+    return(
   <div>
     <h1>
-      {" "}
-      Siemanko, tutaj {props.user}. <br />
-      To jest moje {props.place} do ćwiczenia zagadnień <br/> 
+        Myślisz, że to koniec?  </h1>
+     <h3> Siemanko, tutaj {props.user}. <br />
+      Dotarłeś do mojej tajemnej {props.place} , w której trzymam zadanka z  <br/> 
       {props.language}.
-    </h1>
-    <PropsPlayground2 />
-    {/* <Counter /> */}
-    <HookCounter />
-    <HookCounter2 />
-    <HookCounterWithObject />
-    <HookCounterWithArray />
-    <HookCounterUseEffect />
-    <HookUseEffectMousePosition />
+   
+    <div>
+    <button onClick={()=> setDisplay(!display)}>Kliknij aby zobaczyć moje zadania</button>
+    {display && <HooksExercises/>}
   </div>
-);
+  </h3>
+  </div>
+    )};
 
 export default PropsPlayground;

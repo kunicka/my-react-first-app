@@ -11,8 +11,10 @@ setY(e.clientY);
 }
 
 useEffect(() => {
-    console.log("ghj");
     window.addEventListener('mousemove', logMousePosition)
+    return() => {
+        window.removeEventListener('mousemove', logMousePosition)
+    }
     },
     [])
 
