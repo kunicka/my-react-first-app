@@ -1,6 +1,7 @@
 import React from "react";
 import PropsPlayground2 from "./PropsPlayground2";
-import Counter from "./Counter";
+//import Counter from "./Counter";
+import HookCounter from "./HookCounter";
 
 
 const PropsPlayground = (props) => (
@@ -11,7 +12,8 @@ const PropsPlayground = (props) => (
       {props.language}.
     </h1>
     <PropsPlayground2 />
-    <Counter />
+    {/* <Counter /> */}
+    <HookCounter/>
   </div>
 );
 

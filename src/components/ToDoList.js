@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import ToDoItems from "./ToDoItems";
 import toDosData from "./dataBases/ToDosData";
 
 // function addToDo() {
@@ -24,7 +23,6 @@ function ToDoList() {
 
   const addTask = () => {
     if (ref.current) {
-      console.log("fghj");
       const newArray = [
         ...itemsArray,
         { id: count, text: ref.current.value, completed: NaN },
