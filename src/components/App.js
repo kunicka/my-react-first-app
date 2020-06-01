@@ -19,8 +19,7 @@ function App() {
       <QuotesList/>
       <RulesList />
       <ToDoList />
-      <PropsPlayground user={"Agnieszka"} place={"podwórko"} language={"React"}/>
-      <PropsPlayground user={"Marek"} place={"miejsce"} language={"Życie"}/>
+      <PropsPlayground user={"Agnieszka"} place={"podwórko"} language={"React Hooks"}/>
       <Footer />
     </div>
   );

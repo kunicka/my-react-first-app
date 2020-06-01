@@ -3,10 +3,14 @@ import React, {useState} from 'react'
 function HookCounter() {
     const [count, setCount] = useState(0)
     return (
-        <div>
-            <button onClick={()=>setCount(count+1)}>Licz {count}</button>
+        <h3>
+            useState 
+            <br/>
+            <button onClick={()=>setCount(count+1)}>Dodaj </button>
             <button onClick={()=>setCount(0)}>Licz od nowa</button>
-        </div>
+            <br/>
+            {count}
+        </h3>
     )
 }
 

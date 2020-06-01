@@ -5,21 +5,23 @@ class PropsPlayground2 extends React.Component {
     constructor(){
         super();
         this.state = {
-            message: "Welcome visitor",
+            message: "Polajkuj jeśli Ci się podoba.",
         }
     }
 
     changeMessage(){
         this.setState({
-            message: "GoodBuy visitor"
+            message: "Dzięki za polajkowanie!"
         })
     }
     
     render(){
         return(
             <div>
-                <h1>{this.state.message}</h1>
-                <button onClick={()=> this.changeMessage()}>change the message</button>
+                <h3>{this.state.message}
+                <br/>
+                <button onClick={()=> this.changeMessage()}>LIKE</button>
+                </h3>
             </div>
             
 
